@@ -1,4 +1,4 @@
-package coupling2;
+package Coupling;
 
 public class Dog implements Animal {
     
@@ -6,15 +6,15 @@ public class Dog implements Animal {
     String color;
 
     Dog() {
-        this.name = "chintu bahi";
+        this.name = "chintu bhai";
         this.color = "brown";
     }
-    
-    public void sound() {
-        System.out.println("Dog is start souding");
-     };
 
-     public void details() {
-        System.out.println(name + " - " + color);
-     };
+    public void sound() {
+        System.out.println("Dog is start sounding");
+    };
+
+    public void details() {
+        System.out.println(name + " : " + color);
+    };
 }

@@ -1,16 +1,36 @@
-package coupling2;
+package Coupling;
+
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         // tight coupling
-        Dog obj = new Dog();
-        Cat obj2 = new Cat();
+        Dog d = new Dog();
+        Cat c = new Cat();
 
-        // loose couping
-        Animal obj3 = (Cat) Container.getObj("cat"); // new Cat();
+        // loose coupling
+        Animal obj = null;
 
-        obj.details();
-        obj2.sound();
-        obj3.details();
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" Enter u r preference : ");
+        String u = sc.nextLine();
+
+        // object creating at runtime
+        obj = (Animal) Container.getObj(u);
+
+        // tight coupling method calling
+        if (u.equals("dog")) {
+            d.sound();
+        }
+        else {
+            c.sound();
+        }
+
+        // loose coupling method calling
+        if (obj != null) {
+            obj.details();
+        }
+
+        sc.close();
     }
 }

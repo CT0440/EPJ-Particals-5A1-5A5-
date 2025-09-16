@@ -1,7 +1,6 @@
-package coupling2;
+package Coupling;
 
-public class Cat implements Animal {
-    
+public class Cat implements Animal{
     String name;
     String color;
 
@@ -11,11 +10,10 @@ public class Cat implements Animal {
     }
 
     public void sound() {
-        System.out.println("Cat is start souding");
-     };
+        System.out.println("Cat is start sounding");
+    };
 
-     public void details() {
-        System.out.println(name + " - " + color);
-     };
-    
+    public void details() {
+        System.out.println(name + " : " + color);
+    };
 }

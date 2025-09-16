@@ -1,4 +1,4 @@
-package coupling2;
+package Coupling;
 
 public interface Animal {
     public void sound();

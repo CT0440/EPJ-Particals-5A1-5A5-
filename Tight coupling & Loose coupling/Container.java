@@ -1,23 +1,24 @@
-package coupling2;
+package Coupling;
 
 public class Container {
-    private static Dog dog;
-    private static Cat cat;
+    private static Dog d;
+    private static Cat c;
 
-    public static Object getObj(String type) {
-        if (type.equals("dog")) {
-            if (dog == null) {
-                dog = new Dog();
+    public static Object getObj(String pref) {
+        if (pref.equals("dog")) {
+            if (d == null) {
+                d = new Dog();
             }
-            return dog;
+
+            return d;
         }
 
-        if (type.equals("cat")) {
-            if (cat == null) {
-                cat = new Cat();
+        if (pref.equals("cat")) {
+            if (c == null) {
+                c = new Cat();
             }
 
-            return cat;
+            return c;
         }
 
         return null;
