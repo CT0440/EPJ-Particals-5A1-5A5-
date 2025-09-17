@@ -18,6 +18,7 @@ public class StudentDao {
 	
 	public StudentDao() {
 		super();
+		// TODO Auto-generated constructor stub
 	}
 	
 	@Autowired
@@ -43,7 +44,6 @@ public class StudentDao {
 			return s;
 		}
 	
-	// Insert data
 	@Transactional
 	public void insert(String name, long enroll_no, Date date, String dept) {
 		Session session = factory.getCurrentSession();
@@ -52,7 +52,6 @@ public class StudentDao {
 		System.out.println("data inserted successfully");
 	}
 	
-	// update data
 	@Transactional
 	public void update(Student s) {
 		Session session = factory.getCurrentSession();
@@ -60,7 +59,6 @@ public class StudentDao {
 		System.out.println("data updated successfully");
 	}
 	
-	// remove data
 	@Transactional
 	public void remove(Student s) {
 		Session session = factory.getCurrentSession();
