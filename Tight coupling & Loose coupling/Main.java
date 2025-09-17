@@ -12,7 +12,7 @@ public class Main {
         Animal obj = null;
 
         Scanner sc = new Scanner(System.in);
-        System.out.println(" Enter u r preference : ");
+        System.out.println("Enter u r preference : ");
         String u = sc.nextLine();
 
         // object creating at runtime
