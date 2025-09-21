@@ -1,0 +1,13 @@
+{
+    "zencoder.mcpServers": {
+        "Local_Docker": {
+            "type": "stdio",
+            "command": "docker",
+            "args": [
+                "mcp",
+                "gateway",
+                "run"
+            ]
+        }
+    }
+}
