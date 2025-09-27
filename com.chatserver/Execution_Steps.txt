@@ -2,6 +2,8 @@ How to Run the Chat Project
 
 1. Open the project folder in your file explorer or IDE.
 2. Open a terminal in that folder.
+   - execute cmd : cd src/main/java
+   
 3. Compile the Java files:
    - execute cmd: javac ChatClient.java ChatServer.java
  
