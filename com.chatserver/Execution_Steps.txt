@@ -1,0 +1,24 @@
+How to Run the Chat Project
+
+1. Open the project folder in your file explorer or IDE.
+2. Open a terminal in that folder.
+3. Compile the Java files:
+   - execute cmd: javac ChatClient.java ChatServer.java
+ 
+4. Start the Chat Server: 
+   - execute cmd : java ChatServer
+
+5. Open a new terminal in the same folder.
+6. Start the first Chat Client:
+   - execute cmd :java ChatClient
+
+7. Open another terminal** in the **same folder**.
+8. Start the second Chat Client:
+   - execute cmd :java ChatClient
+   
+9. Start chatting:
+   * Type any message in **one client.
+   * The message will appear in the other client’s terminal.
+
+✅ Enjoy chatting between multiple clients!
+
